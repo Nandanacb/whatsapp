@@ -73,36 +73,17 @@ class Calls extends StatelessWidget{
                   );  
           }),
                ),
-
-               Row(
-                mainAxisAlignment:MainAxisAlignment.end ,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                 children: [
-                   Padding(
-                     padding: const EdgeInsets.all(10),
-                     child: Container(
-                       height: 40,
-                       width: 40,
-                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.green),
-                       child: Icon(Icons.add_call),
-                     ),
-                   ),
-                 ],
-               ),
-               
-               
-               
-               
-               
-               
-               ],
-  
-           
-  
-  
-  
-  
-  ),
+],
+ ),
+ 
+      floatingActionButton: FloatingActionButton(onPressed: (){},
+      backgroundColor: Colors.green,
+      child: Container(
+        height: 25,
+        width: 25,
+        child: Icon(Icons.call,
+      ),),
+      ),
     
      bottomNavigationBar: BottomNavigationBar(
         backgroundColor: const Color.fromARGB(255, 151, 148, 148),

@@ -1,9 +1,16 @@
+import 'package:assignment3/calls.dart';
 import 'package:flutter/material.dart';
 
 class Communities extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
+
+    Future.delayed(Duration(seconds: 5), () {
+      Navigator.push(context,
+      MaterialPageRoute(builder: (context)=>Calls()),
+      );
+    });
     return Scaffold(
      appBar: AppBar(
 

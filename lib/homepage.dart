@@ -1,10 +1,16 @@
 import 'package:assignment3/database.dart';
+import 'package:assignment3/status.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget{
   @override
 
   Widget build(BuildContext context){
+    Future.delayed(Duration(seconds: 5), () {
+      Navigator.push(context,
+      MaterialPageRoute(builder: (context)=>Status()),
+      );
+    });
     return Scaffold(
       appBar: AppBar(
         title: Text("Whatsapp",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.green),),
@@ -24,7 +30,18 @@ class HomePage extends StatelessWidget{
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Colors.white),
             child: Padding(
               padding: const EdgeInsets.all(13),
-              child: Text("Ask Meta Ai Or Search",style: TextStyle(fontSize: 13),),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 10,
+                    backgroundColor: Colors.purple,
+                    child: CircleAvatar(
+                      radius: 6,
+                    ),
+                  ),
+                  Text(" Ask Meta Ai Or Search",style: TextStyle(fontSize: 13),),
+                ],
+              ),
             ),
           ),
 
@@ -43,24 +60,17 @@ class HomePage extends StatelessWidget{
                     }
                   ),
                   ),
-           
-            Padding(
-              padding: const EdgeInsets.all(10),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.green),
-                    child: Icon(Icons.add_comment,color: Colors.black,),
-                  ),
-                ],
-              ),
-            ),
-
-        ],
+           ],
       ),
+
+      floatingActionButton: FloatingActionButton(onPressed: (){},
+      backgroundColor: Colors.green,
+      child: Container(
+        height: 25,
+        width: 25,
+        color: Colors.white,
+        child: Icon(Icons.add),
+      ),),
        
        bottomNavigationBar: BottomNavigationBar(
         backgroundColor: const Color.fromARGB(255, 151, 148, 148),

@@ -207,6 +207,31 @@ static List<Map> mycallList=[
   "text":"7 January,8.13 am",
 
   },
+
+  
+  {
+
+  "image":"assets/images/img9.jpeg",
+  "name":"Anu",
+  "text":"24 August,7:50 pm",
+
+  },
+  
+  {
+
+  "image":"assets/images/img3.jpeg",
+  "name":"Sree",
+  "text":"6 October,3.40 pm",
+
+  },
+  
+  {
+
+  "image":"assets/images/img2.jpeg",
+  "name":"Laya",
+  "text":"7 January,8.13 am",
+
+  },
   
   
   

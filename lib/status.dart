@@ -1,11 +1,18 @@
 //import 'package:assignment3/database.dart';
+import 'package:assignment3/communities.dart';
 import 'package:assignment3/database.dart';
 import'package:flutter/material.dart';
 
 class Status extends StatelessWidget{
 
   @override
-  Widget build(BuildContext context){
+  
+    Widget build(BuildContext context){
+    Future.delayed(Duration(seconds: 5), () {
+      Navigator.push(context,
+      MaterialPageRoute(builder: (context)=>Communities()),
+      );
+    });
     return Scaffold(
       appBar: AppBar(
         title: Text("Updates",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.green),),
@@ -164,52 +171,17 @@ class Status extends StatelessWidget{
           }),
        ),
        
-       /*Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(7),
-            child: Container(
-              height: 30,
-              width: 30,
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.white),
-              child: Icon(Icons.note_alt)
-            ),
-          ),
-        ],
-       ),*/
        
-       Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(10),
-            child: Container(
-              height: 40,
-              width: 40,
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.green),
-              child: Icon(Icons.camera_alt),
-            ),
-          ),
-        ],
-       ),
-
-      
-
-
-
-
-
-
-
-
-
-
-
       ],
       ),
+      
+      floatingActionButton: FloatingActionButton(onPressed: (){},
+      backgroundColor: Colors.green,
+      child: Container(
+        height: 25,
+        width: 25,
+        child: Icon(Icons.camera_alt),
+      ),),
 
     
         bottomNavigationBar: BottomNavigationBar(
