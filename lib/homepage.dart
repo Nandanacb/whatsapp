@@ -73,10 +73,11 @@ class HomePage extends StatelessWidget{
       ),),
        
        bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color.fromARGB(255, 151, 148, 148),
         
+        backgroundColor:Colors.white,
         selectedItemColor: Colors.green,
-        unselectedItemColor: Colors.green,
+        unselectedItemColor: Colors.grey,
+        showUnselectedLabels: true,
 
         items: 
         [

@@ -89,7 +89,8 @@ class Calls extends StatelessWidget{
         backgroundColor: const Color.fromARGB(255, 151, 148, 148),
         
         selectedItemColor: Colors.green,
-        unselectedItemColor: Colors.green,
+        unselectedItemColor: Colors.grey,
+        showUnselectedLabels: true,
 
         items: 
         [
