@@ -72,23 +72,7 @@ class HomePage extends StatelessWidget{
         child: Icon(Icons.add),
       ),),
        
-       bottomNavigationBar: BottomNavigationBar(
-        
-        backgroundColor:Colors.white,
-        selectedItemColor: Colors.green,
-        unselectedItemColor: Colors.grey,
-        showUnselectedLabels: true,
-
-        items: 
-        [
-          BottomNavigationBarItem(icon: Icon(Icons.chat),label: "Chats"),
-          BottomNavigationBarItem(icon: Icon(Icons.update),label: "Updates"),
-          BottomNavigationBarItem(icon: Icon(Icons.group_add_rounded),label: "Communities"),
-          BottomNavigationBarItem(icon: Icon(Icons.call),label: "Calls"),
-        ]
-        
-        
-        ),
+       
     );
   }
 }

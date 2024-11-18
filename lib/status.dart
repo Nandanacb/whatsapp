@@ -1,4 +1,4 @@
-//import 'package:assignment3/database.dart';
+
 import 'package:assignment3/communities.dart';
 import 'package:assignment3/database.dart';
 import'package:flutter/material.dart';
@@ -184,22 +184,7 @@ class Status extends StatelessWidget{
       ),),
 
     
-        bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color.fromARGB(255, 151, 148, 148),
-        
-        selectedItemColor: Colors.green,
-        unselectedItemColor: Colors.grey,
-        showUnselectedLabels: true,
-
-        items: 
-        [
-          BottomNavigationBarItem(icon: Icon(Icons.chat),label: "Chats"),
-          BottomNavigationBarItem(icon: Icon(Icons.update),label: "Updates"),
-          BottomNavigationBarItem(icon: Icon(Icons.group_add_rounded),label: "Communities"),
-          BottomNavigationBarItem(icon: Icon(Icons.call),label: "Calls"),
-        ]
-        
-        ),
+       
   );
   }
 }

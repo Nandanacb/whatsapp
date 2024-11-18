@@ -1,3 +1,4 @@
+import 'package:assignment3/bottom_navigationbar.dart';
 import 'package:assignment3/calls.dart';
 import 'package:assignment3/communities.dart';
 import 'package:assignment3/homepage.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
      debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home:BottomNavigationpage(),
     );
   }
 }
